@@ -35,11 +35,11 @@ app.post("/", function(req, res) {
     }
 
     const jsonData = JSON.stringify(data);
-    const url = "https://us18.api.mailchimp.com/3.0//lists/a87c0f4535"
+    const url = "https://usX.api.mailchimp.com/3.0//lists/{list-id}"
 
     const options = {
         method: "POST",
-        auth: "vandit1:9181fc3dec40a1cca56cfe5e85c56c95-us18"
+        auth: "vandit1:abcdef9181fc3dec40a1cca56cfe5e85c56c95-us18"
     }
 // To Send Data or TO Post Data on API we need to do the HTTPS request and not HTTPS get method and in request method we need to give 3 parameters URL, Options, Functions and In Options we need to pass the API key and the Method get or Post and we are storing it in a variable so we can write the data which the API needs and then we are ending out request and we are performing this all in POST 
 // app.post() so that we are making a post request and not the get request  
